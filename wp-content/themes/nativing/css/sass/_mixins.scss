@@ -1,0 +1,74 @@
+/* -------------------------------------------------------------*/
+/* ------------------------MIXINS-------------------------------*/
+/* -------------------------------------------------------------*/
+
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin transition($property, $duration, $easing) {
+	-webkit-transition: $property $easing $duration;
+	-moz-transition: $property $easing $duration;
+	transition: $property $easing $duration;
+}
+
+@mixin taille($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin scaleY($y){
+	-webkit-transform: scaleY($y);
+	-moz-transform: scaleY($y);
+	-ms-transform: scaleY($y);
+	-o-transform: scaleY($y);
+	transform: scaleY($y);
+}
+
+@mixin scaleYImportant($y){
+	-webkit-transform: scaleY($y) !important;
+	-moz-transform: scaleY($y) !important;
+	-ms-transform: scaleY($y) !important;
+	-o-transform: scaleY($y) !important;
+	transform: scaleY($y) !important;
+}
+
+@mixin scaleX($x){
+	-webkit-transform: scaleX($x);
+	-moz-transform: scaleX($x);
+	-ms-transform: scaleX($x);
+	-o-transform: scaleX($x);
+	transform: scaleX($x);
+}
+
+@mixin transform-origin($origin){
+	-webkit-transform-origin: $origin;
+	-moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	-o-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+@mixin box-shadow($box1, $box2){
+    -webkit-box-shadow: $box1, $box2;
+    -moz-box-shadow: $box1, $box2;
+    box-shadow: $box1, $box2;
+}
+
+@mixin transform-origin2($value1, $value2) {
+    -webkit-transform-origin: $value1 $value2;
+    -moz-transform-origin: $value1 $value2;
+    -ms-transform-origin: $value1 $value2;
+    -o-transform-origin: $value1 $value2;
+}
+
+@mixin rotate($degres) {
+    -webkit-transform: rotate($degres); /* Chrome, Safari, Opera */
+    -moz-transform: rotate($degres); /* FF */
+	-ms-transform: rotate($degres); /* IE 9 */
+    transform: rotate($degres);
+}

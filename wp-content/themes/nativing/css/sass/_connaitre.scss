@@ -1,0 +1,182 @@
+#weavup{
+  h1{
+    text-align: center;
+  }
+  h1:after{
+      content: '';
+      display: block;
+      margin: auto;
+      width: 100px;
+      background: linear-gradient(to right, rgba(254,85,34,1) 0%, rgba(246,41,12,1) 0%, rgba(248,80,50,1) 0%, rgba(255,110,20,1) 100%);
+      height: 2px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+  }
+  p{
+    color: $color2;
+  }
+  img{
+    max-width: 80%;
+    float: right;
+    @media screen and (max-width: $mobile){
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+  }
+  h2:after{
+    content: '';
+    display: block;
+    width: 100px;
+    background: linear-gradient(to right, rgba(254,85,34,1) 0%, rgba(246,41,12,1) 0%, rgba(248,80,50,1) 0%, rgba(255,110,20,1) 100%);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  a{
+    background: linear-gradient(to right,#fe5522 0,#f6290c 0,#f85032 0,#ff6e14 100%);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+
+    @media screen and (max-width: $mobile){
+      display: block;
+      margin: auto;
+      width: 200px;
+    }
+
+  }
+
+}
+
+#equipe{
+  h2{
+    text-align: center;
+  }
+  h2:after{
+    content: '';
+    display: block;
+    margin: auto;
+    width: 100px;
+    background: linear-gradient(to right, rgba(254,85,34,1) 0%, rgba(246,41,12,1) 0%, rgba(248,80,50,1) 0%, rgba(255,110,20,1) 100%);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .block-shadow{
+
+    div{
+      background-color: #fff;
+      -webkit-box-shadow: 2px 4px 40px 1px rgba(0,0,0,.37);
+      -moz-box-shadow: 2px 4px 40px 1px rgba(0,0,0,.37);
+      box-shadow: 2px 4px 40px 1px rgba(0,0,0,.37);
+      padding: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 30px;
+      border-radius: 5px;
+
+      img{
+        max-width: 50%;
+      }
+      p{
+        color: $color2;
+        text-align: center;
+      }
+      i{
+       color: $color1;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+#consultant{
+  h2{
+    text-align: center;
+  }
+  h2:after{
+    content: '';
+    display: block;
+    margin: auto;
+    width: 100px;
+    background: linear-gradient(to right, rgba(254,85,34,1) 0%, rgba(246,41,12,1) 0%, rgba(248,80,50,1) 0%, rgba(255,110,20,1) 100%);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+    .block-consult{
+      img{
+        border-radius: 5px;
+      }
+      p{
+        color: $color2;
+
+      }
+      i{
+        color: $color1;
+        margin-left: 10px;
+      }
+    }
+
+}
+.button-consultant{
+  background: linear-gradient(to right,#fe5522 0,#f6290c 0,#f85032 0,#ff6e14 100%);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+
+  i{
+    margin-left: 10px;
+  }
+}
+#valeurs{
+  background-image: url(http://vps481450.ovh.net/wp-content/uploads/2018/01/fond-circle2.jpg);
+  background-position: center center;
+  h2{
+    text-align: center;
+    color: $color4;
+    margin-bottom: 50px;
+  }
+  img{
+    max-width: 80%;
+    display: block;
+    margin: auto;
+
+  }
+}
+#solution{
+  p{
+    color: $color2;
+  }
+  h2:after{
+    content: '';
+    display: block;
+    width: 100px;
+    background: linear-gradient(to right, rgba(254,85,34,1) 0%, rgba(246,41,12,1) 0%, rgba(248,80,50,1) 0%, rgba(255,110,20,1) 100%);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  img{
+    max-width: 80%;
+
+    @media screen and (max-width: $mobile){
+      margin: auto;
+      display: block;
+    }
+  }
+  a{
+    background: linear-gradient(to right,#fe5522 0,#f6290c 0,#f85032 0,#ff6e14 100%);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+}

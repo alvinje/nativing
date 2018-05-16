@@ -1,0 +1,154 @@
+#contact{
+  h2{
+    text-align: center;
+  }
+  h2:after{
+    content: '';
+    display: block;
+    margin: auto;
+    width: 100px;
+    background: linear-gradient(to right, rgba(254,85,34,1) 0%, rgba(246,41,12,1) 0%, rgba(248,80,50,1) 0%, rgba(255,110,20,1) 100%);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .trouver{
+    h3{
+      text-align: center;
+
+    }
+    p{
+      text-align: center;
+      color: $color2;
+    }
+    .icon-local{
+      background: $color1;
+      width: 65px;
+      height: 65px;
+      padding: 20px;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+
+
+      i{
+        color: $color4;
+
+      }
+    }
+    .col-md-4{
+      @media screen and (max-width: $mobile){
+        padding-bottom: 50px;
+      }
+    }
+  }
+  .form-control{
+    background: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 20px;
+  }
+  .wpcf7-submit{
+    background: linear-gradient(to right,#fe5522 0,#f6290c 0,#f85032 0,#ff6e14 100%);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+  }
+  .border-top{
+    border-top: 1px solid #cecece;
+
+    .col-md-4{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      i{
+        background: linear-gradient(to right,#fe5522 0,#f6290c 0,#f85032 0,#ff6e14 100%);
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color4;
+
+      }
+      p{
+        text-align: center;
+        color: $color2;
+        margin-left: 15px;
+      }
+
+    }
+
+  }
+
+  //flip-animation
+  .block {
+
+    position: relative;
+    width: 100%;
+  }
+
+  .flip {
+    -webkit-perspective: 800;
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .flip .sleeve {
+    padding-top: 56.25%;
+
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    width: 100%;
+  }
+
+  .flip .sleeve > div {
+    -webkit-backface-visibility: hidden;
+    bottom: 0;
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .flip .sleeve > div img {
+
+  }
+
+  .flip .sleeve > div a {
+
+    display: block;
+  }
+
+
+  .flip .back {
+
+
+    transform: rotateX(180deg);
+  }
+
+  .flip .sleeve:hover {
+    transform: rotateX(180deg);
+  }
+
+  .flip.horizontal .back {
+    transform: rotateY(180deg);
+  }
+
+  .flip.horizontal .sleeve:hover,
+  .flip.horizontal .sleeve:focus {
+    transform: rotateY(180deg);
+  }
+}

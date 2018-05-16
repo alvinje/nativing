@@ -1,0 +1,73 @@
+/* -------------------------------------------------------------*/
+/* -------------------------INIT-------------------------------*/
+/* -------------------------------------------------------------*/
+
+$color1: #ff6630;
+$color2: #607d8b;
+$color3: #5c5c5c;
+$color4: #333;
+$color5: #f8f8f8;
+
+$desktops:1199px;
+$tablet: 992px;
+$mobile:768px;
+$miniMobile:575px;
+
+$menuWidth:300px;
+
+
+.with-padding{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.med-padding{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.big-padding{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.margin-bottom{
+  margin-bottom: 40px;
+}
+.margin-top{
+  margin-top: 40px;
+  text-align: center;
+
+  @media screen and (max-width: $mobile){
+    margin-bottom: 20px;
+  }
+}
+
+.align-item{
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: $mobile){
+    display: inherit;
+  }
+}
+
+.justify-content{
+  display: flex;
+  justify-content: center;
+}
+
+.table{
+  display: table;
+}
+
+.align-item-home{
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: $mobile){
+    margin-top: 20px;
+  }
+
+
+}

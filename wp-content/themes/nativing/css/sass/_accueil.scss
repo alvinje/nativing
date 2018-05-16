@@ -1,0 +1,302 @@
+#appli{
+  h2{
+    color:$color3;
+  }
+  p{
+    color: $color2;
+  }
+  h2:after{
+    content: '';
+    display: block;
+    width: 100px;
+    background: linear-gradient(to right, rgba(254,85,34,1) 0%, rgba(246,41,12,1) 0%, rgba(248,80,50,1) 0%, rgba(255,110,20,1) 100%);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .mockup{
+    max-width: 60%;
+    display: block;
+    margin: auto;
+  }
+  #block_appli {
+    display: inline-block;
+    margin-top: 20px;
+
+    @media screen and (max-width: $mobile){
+        display: block !important;
+        margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+#shema{
+  background-image: url(http://vps481450.ovh.net/wp-content/uploads/2018/01/fond-circle2.jpg);
+  background-position: center center;
+
+  h2{
+    color: $color4;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  #img-shema {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+
+    @media screen and (max-width: $mobile){
+      display: none;
+    }
+  }
+  .slider-responsive{
+    display: none;
+    @media screen and (max-width: $mobile){
+      display: block;
+
+      p{
+        text-align: center;
+        color: $color4;
+      }
+      h3{
+        text-align: center;
+        color: $color4;
+      }
+      .carousel-indicators{
+        top: 100%;
+      }
+    }
+
+  }
+}
+
+#offre{
+  h2{
+    color:$color3;
+    text-align: center;
+  }
+
+  h2:after{
+    content: '';
+    margin: auto;
+    display: block;
+    width: 100px;
+    background: linear-gradient(to right, rgba(254,85,34,1) 0%, rgba(246,41,12,1) 0%, rgba(248,80,50,1) 0%, rgba(255,110,20,1) 100%);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .btn{
+    background: none;
+    border: 1px solid $color4;
+    padding: 5px 10px;
+    color: $color4;
+    border-radius: 5px;
+    font-size: 12px
+  }
+  .content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+   .fa-tablet-alt{
+     color: $color4;
+     text-align: center;
+   }
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+
+  .content-image{
+    width: 100%;
+  }
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  .content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+
+  .content-details p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+
+  .fadeIn-bottom{
+    top: 80%;
+  }
+
+  .fadeIn-top{
+    top: 20%;
+  }
+
+  .fadeIn-left{
+    left: 20%;
+  }
+
+  .fadeIn-right{
+    left: 80%;
+  }
+
+}
+
+#partner{
+
+  //background-image: url(http://vps481450.ovh.net/wp-content/uploads/2018/03/partner-fond.png);
+  //background-position: center center;
+  h2{
+    color:$color3;
+    text-align: center;
+  }
+
+  h2:after{
+    content: '';
+    margin: auto;
+    display: block;
+    width: 100px;
+    background: linear-gradient(to right, rgba(254,85,34,1) 0%, rgba(246,41,12,1) 0%, rgba(248,80,50,1) 0%, rgba(255,110,20,1) 100%);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* carousel */
+  #quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    text-align:center;
+  }
+  /* indicator position */
+  #quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: -10px;
+    margin-right: -19px;
+  }
+  /* indicator color */
+  #quote-carousel .carousel-indicators li {
+    background: #c0c0c0;
+  }
+  /* active indicator */
+  #quote-carousel .carousel-indicators .active {
+    background: #333333;
+    height:10px;
+    width:10px;
+    margin-bottom:1px;
+  }
+  /* typography */
+
+  p {
+    text-align: center;
+    color: $color3;
+  }
+  h3{
+    color: $color1;
+  }
+  img{
+    width: auto;
+    height: 150px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+  .fa-quote-left{
+    margin-right: 5px;
+  }
+  .fa-quote-right{
+    margin-left: 5px;
+  }
+}
+
+#blog-home{
+  h2{
+    color:$color3;
+    text-align: center;
+  }
+
+  h3{
+    color:$color3;
+
+    @media screen and (max-width: $mobile){
+      text-align: center;
+    }
+  }
+
+  h2:after{
+    content: '';
+    margin: auto;
+    display: block;
+    width: 100px;
+    background: linear-gradient(to right, rgba(254,85,34,1) 0%, rgba(246,41,12,1) 0%, rgba(248,80,50,1) 0%, rgba(255,110,20,1) 100%);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .sign{
+    color: $color3;
+    span{
+      color: $color1;
+    }
+    @media screen and (max-width: $mobile){
+      text-align: center;
+    }
+  }
+  p{
+    color: $color2;
+  }
+  img{
+    max-width: 55%;
+  }
+  .btn{
+    background: linear-gradient(to right,#fe5522 0,#f6290c 0,#f85032 0,#ff6e14 100%);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+}
